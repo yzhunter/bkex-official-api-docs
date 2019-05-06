@@ -261,7 +261,7 @@ Parameters:
 
 | Name | Type | Required | Default | Description  |
 | ---- | ---- | -------- | ------- | ------------ |
-| pair | STRING | true | | |
+| pair | STRING | false | | |
 
 Response:
 
