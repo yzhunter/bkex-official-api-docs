@@ -250,6 +250,41 @@ Response:
 }
 ```
 
+### 24hr tickers price change statistics
+
+```
+GET /v1/q/tickers
+GET /v1/q/tickers?pair=BTC_USDT
+```
+
+Parameters:
+
+| Name | Type | Required | Default | Description  |
+| ---- | ---- | -------- | ------- | ------------ |
+| pair | STRING | true | | |
+
+Response:
+
+```javascript
+{
+    "msg": "success",
+    "code": 0,
+    "data": [
+        {
+            "pair": "BTC_USDT",
+            "t": 1557148507213,//时间
+            "c": 5687.45,//收盘价
+            "o": 5774.3547,//开盘价
+            "h": 5818,//最高价
+            "l": 5620.5,//最低价
+            "a": 14988.5219,//交易量 amount
+            "r": -1.5,//涨跌
+            "v": 85760865.5712 //交易额
+        }
+    ]
+}
+```
+
 ### Pair price ticker
 
 ```
